@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016 年 1 朁E19 日 10:36
+-- Generation Time: 2016 年 1 朁E19 日 12:06
 -- サーバのバージョン： 5.6.25
 -- PHP Version: 5.6.11
 
@@ -23,36 +23,60 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `attr`
+-- テーブルの構造 `attrs`
 --
 
-CREATE TABLE IF NOT EXISTS `attr` (
+CREATE TABLE IF NOT EXISTS `attrs` (
   `id` int(11) NOT NULL,
   `attr_type` varchar(8) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `attrs`
+--
+
+INSERT INTO `attrs` (`id`, `attr_type`, `created`, `modified`) VALUES
+(1, '火', '2016-01-19 12:04:48', '2016-01-19 12:04:48'),
+(2, '水', '2016-01-19 12:04:55', '2016-01-19 12:04:55'),
+(3, '木', '2016-01-19 12:05:02', '2016-01-19 12:05:02'),
+(4, '光', '2016-01-19 12:05:09', '2016-01-19 12:05:09'),
+(5, '闇', '2016-01-19 12:05:14', '2016-01-19 12:05:14');
 
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `kind`
+-- テーブルの構造 `kinds`
 --
 
-CREATE TABLE IF NOT EXISTS `kind` (
+CREATE TABLE IF NOT EXISTS `kinds` (
   `id` int(11) NOT NULL,
   `kind_type` varchar(32) NOT NULL,
-  `created` int(11) NOT NULL,
-  `modified` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `kinds`
+--
+
+INSERT INTO `kinds` (`id`, `kind_type`, `created`, `modified`) VALUES
+(7, '神', '2016-01-19 12:03:13', '2016-01-19 12:03:13'),
+(8, 'ドラゴン', '2016-01-19 12:03:33', '2016-01-19 12:03:33'),
+(9, '悪魔', '2016-01-19 12:03:39', '2016-01-19 12:03:39'),
+(10, 'バランス', '2016-01-19 12:03:53', '2016-01-19 12:03:53'),
+(11, '攻撃', '2016-01-19 12:03:59', '2016-01-19 12:03:59'),
+(12, '体力', '2016-01-19 12:04:06', '2016-01-19 12:04:06'),
+(13, '回復', '2016-01-19 12:04:14', '2016-01-19 12:04:14');
 
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `monster`
+-- テーブルの構造 `monsters`
 --
 
-CREATE TABLE IF NOT EXISTS `monster` (
+CREATE TABLE IF NOT EXISTS `monsters` (
   `id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL,
   `hp` int(11) NOT NULL,
@@ -69,21 +93,21 @@ CREATE TABLE IF NOT EXISTS `monster` (
 --
 
 --
--- Indexes for table `attr`
+-- Indexes for table `attrs`
 --
-ALTER TABLE `attr`
+ALTER TABLE `attrs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `kind`
+-- Indexes for table `kinds`
 --
-ALTER TABLE `kind`
+ALTER TABLE `kinds`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `monster`
+-- Indexes for table `monsters`
 --
-ALTER TABLE `monster`
+ALTER TABLE `monsters`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -91,19 +115,19 @@ ALTER TABLE `monster`
 --
 
 --
--- AUTO_INCREMENT for table `attr`
+-- AUTO_INCREMENT for table `attrs`
 --
-ALTER TABLE `attr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `attrs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `kind`
+-- AUTO_INCREMENT for table `kinds`
 --
-ALTER TABLE `kind`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `kinds`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
--- AUTO_INCREMENT for table `monster`
+-- AUTO_INCREMENT for table `monsters`
 --
-ALTER TABLE `monster`
+ALTER TABLE `monsters`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

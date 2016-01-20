@@ -1,3 +1,4 @@
+<?php echo $this->Html->css('style'); ?>
 <div class="monsters index">
 	<h2><?php echo __('Monsters'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -55,12 +56,12 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php /*echo __('Menu'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Monster'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Attrs'), array('controller' => 'attrs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Attr'), array('controller' => 'attrs', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Kinds'), array('controller' => 'kinds', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Kind'), array('controller' => 'kinds', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Kind'), array('controller' => 'kinds', 'action' => 'add')); */?> </li>
 	</ul>
 </div>

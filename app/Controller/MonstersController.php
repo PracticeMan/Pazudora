@@ -22,6 +22,7 @@ class MonstersController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'home';
 		$this->Monster->recursive = 0;
 		$this->set('monsters', $this->Paginator->paginate());
 	}

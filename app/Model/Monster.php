@@ -96,4 +96,19 @@ class Monster extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+*‰æ‘œUploadˆ—’Ç‰Á
+*/
+	public $actsAs = array(
+		'UploadPack.Upload' => array(
+			'image' => array(
+				'quality' => 95,
+				'styles' => array(
+					'thumb' => '60x60'
+				)
+			)
+		),
+	);
+
 }

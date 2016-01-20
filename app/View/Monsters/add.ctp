@@ -8,7 +8,8 @@
 		echo $this->Form->input('atatck');
 		echo $this->Form->input('attr_id');
 		echo $this->Form->input('kind_id');
-		echo $this->Form->input('image_file_name');
+		//echo $this->Form->input('image_file_name');
+		echo $this->Form->input('image',array('type'=>'file','label'=>'モンスター画像'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

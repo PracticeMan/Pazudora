@@ -1,0 +1,25 @@
+2016-01-20 12:10:12 Error: [MissingPluginException] Plugin UploadPack could not be found.
+Exception Attributes: array (
+  'plugin' => 'UploadPack',
+)
+Request URL: /Pazudora/monsters/add
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(227): CakePlugin::path('UploadPack')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(549): App::path('Model/Behavior', 'UploadPack')
+#2 [internal function]: App::load('UploadBehavior')
+#3 [internal function]: spl_autoload_call('UploadBehavior')
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\BehaviorCollection.php(120): class_exists('UploadBehavior')
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\BehaviorCollection.php(66): BehaviorCollection->load('UploadPack.Uplo...', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(774): BehaviorCollection->init('Monster', Array)
+#7 [internal function]: Model->__construct(Array)
+#8 C:\xampp\htdocs\Pazudora\lib\Cake\Utility\ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(741): ClassRegistry::init(Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(367): Controller->loadModel('Monster')
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(405): Controller->__isset('Monster')
+#12 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(60): Controller->__get('Monster')
+#13 [internal function]: MonstersController->add()
+#14 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#15 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#17 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}

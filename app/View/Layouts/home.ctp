@@ -32,11 +32,21 @@
                 <fieldset class="kind_field">
                     <legend><h3>タイプ別検索</h3></legend><br>
                 <div class="kind_link">
-                    <a>神 </a> <a>ドラゴン </a> <a>悪魔 </a> <a>バランス </a> <a>攻撃 </a><br>
+                    <?php echo $this->Html->link('神', array('action' => 'kinds_list/7')) ?>
+                    <?php echo $this->Html->link('ドラゴン', array('action' => 'kinds_list/8')) ?>
+                    <?php echo $this->Html->link('悪魔', array('action' => 'kinds_list/9')) ?>
+                    <?php echo $this->Html->link('バランス', array('action' => 'kinds_list/10')) ?>
+                    <?php echo $this->Html->link('攻撃', array('action' => 'kinds_list/11')) ?>
                     <br>
-                    <a>体力 </a> <a>回復 </a> <a>マシン </a> <a>進化用 </a> <a>能力覚醒 </a><br>
+                    <?php echo $this->Html->link('体力', array('action' => 'kinds_list/12')) ?>
+                    <?php echo $this->Html->link('回復', array('action' => 'kinds_list/13')) ?>
+                    <?php echo $this->Html->link('マシン', array('action' => 'kinds_list/14')) ?>
+                    <?php echo $this->Html->link('進化用', array('action' => 'kinds_list/15')) ?>
+                    <?php echo $this->Html->link('能力覚醒', array('action' => 'kinds_list/16')) ?>
                     <br>
-                    <a>強化合成 </a> <a>換金用 </a> <a>特別保護(旧) </a> <br>
+                    <?php echo $this->Html->link('強化合成', array('action' => 'kinds_list/17')) ?>
+                    <?php echo $this->Html->link('換金用', array('action' => 'kinds_list/18')) ?>
+                    <br>
                 </div>
                 </fieldset>
             </div>

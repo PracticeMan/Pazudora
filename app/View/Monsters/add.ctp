@@ -1,5 +1,5 @@
 <div class="monsters form">
-<?php echo $this->Form->create('Monster'); ?>
+<?php echo $this->Form->create('Monster',array('type'=>'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Add Monster'); ?></legend>
 	<?php

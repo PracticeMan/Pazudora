@@ -32,20 +32,32 @@
                 <fieldset class="kind_field">
                     <legend><h3>タイプ別検索</h3></legend><br>
                 <div class="kind_link">
-                    <?php echo $this->Html->link('神', array('action' => 'kinds_list/7')) ?>
-                    <?php echo $this->Html->link('ドラゴン', array('action' => 'kinds_list/8')) ?>
-                    <?php echo $this->Html->link('悪魔', array('action' => 'kinds_list/9')) ?>
-                    <?php echo $this->Html->link('バランス', array('action' => 'kinds_list/10')) ?>
-                    <?php echo $this->Html->link('攻撃', array('action' => 'kinds_list/11')) ?>
+                    <?php echo $this->Html->link($this->Html->image('god_icon.png'), 
+                            array('action' => 'kinds_list/7'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('dragon_icon.png'), 
+                            array('action' => 'kinds_list/8'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('evil_icon.png'), 
+                            array('action' => 'kinds_list/9'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('balance_icon.png'), 
+                            array('action' => 'kinds_list/10'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('attack_icon.png'), 
+                            array('action' => 'kinds_list/11'),array('escape'=>false)); ?>
                     <br>
-                    <?php echo $this->Html->link('体力', array('action' => 'kinds_list/12')) ?>
-                    <?php echo $this->Html->link('回復', array('action' => 'kinds_list/13')) ?>
-                    <?php echo $this->Html->link('マシン', array('action' => 'kinds_list/14')) ?>
-                    <?php echo $this->Html->link('進化用', array('action' => 'kinds_list/15')) ?>
-                    <?php echo $this->Html->link('能力覚醒', array('action' => 'kinds_list/16')) ?>
+                    <?php echo $this->Html->link($this->Html->image('vitality_icon.png'), 
+                            array('action' => 'kinds_list/12'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('recovery_icon.png'), 
+                            array('action' => 'kinds_list/13'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('machine_icon.png'), 
+                            array('action' => 'kinds_list/14'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('evolution_icon.png'), 
+                            array('action' => 'kinds_list/15'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('arousal_icon.png'), 
+                            array('action' => 'kinds_list/16'),array('escape'=>false)); ?>
                     <br>
-                    <?php echo $this->Html->link('強化合成', array('action' => 'kinds_list/17')) ?>
-                    <?php echo $this->Html->link('換金用', array('action' => 'kinds_list/18')) ?>
+                    <?php echo $this->Html->link($this->Html->image('strength_icon.png'), 
+                            array('action' => 'kinds_list/17'),array('escape'=>false)); ?>
+                    <?php echo $this->Html->link($this->Html->image('realization_icon.png'), 
+                            array('action' => 'kinds_list/18'),array('escape'=>false)); ?>
                     <br>
                 </div>
                 </fieldset>

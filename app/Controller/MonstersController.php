@@ -16,12 +16,25 @@ class MonstersController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 	public $helpers = array('UploadPack.Upload');
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
+		$this->set('Fire',$this->Monster->find('all'));
+		$this->layout = 'home';
+		$this->Monster->recursive = 3;
+		$this->set('monsters', $this->Paginator->paginate());
+	}
+	public function fire_list() {
+		$fire = $this->Monster->find('all',array(
+			'conditions' => array(
+				'Monster.attr_id' => array( '1' )
+			)
+	));
+		$this->set('fire',$fire);
 		$this->layout = 'home';
 		$this->Monster->recursive = 0;
 		$this->set('monsters', $this->Paginator->paginate());

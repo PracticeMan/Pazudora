@@ -96,8 +96,9 @@ body{
 	background: #edf1ff;
 }
 .monster_name{
-	position: relative;
-	right:370px;
+	float: left;
+
+
 }
 .td_hp{
 	width:30px;
@@ -134,4 +135,6 @@ body{
 	width:80px;
 	background: #ffffe5;
 }
-
+.monsters{
+	color: #ffffff;
+}

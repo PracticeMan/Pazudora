@@ -18,7 +18,7 @@
                     <legend><h3>属性検索</h3></legend><br>
                 <div class="attr_link">
                     <?php echo $this->Html->link($this->Html->image('fire_icon.png'),
-                            array('action' => 'index'),array('escape'=>false)); ?>
+                            array('action' => 'fire_list'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('water_icon.png'),
                         array('action' => 'index'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('wood_icon.png'),
@@ -52,44 +52,10 @@
                 </ul>
             </div>
         </fieldset>
-            <div class="table">
-                <table>
-                    <tr>
-                        <th colspan="9" class="th_name"><div class="monster_name">名前</div></th>
-                    </tr>
-                    <tr>
-                        <td width="50" height="10"><?php echo $this->Html->link($this->Html->image('thumb.jpg'),
-                                array('action' => 'index'),array('escape'=>false)); ?></td>
-                        <td class="td_hp">HP</td>
-                        <td class="td_hp_value">100</td>
-                        <td class="td_attack">攻撃力</td>
-                        <td class="td_attack_value">3000</td>
-                        <td class="td_attr">属性</td>
-                        <td class="td_attr_name">火</td>
-                        <td class="td_kind">タイプ</td>
-                        <td class="td_kind_name">ドラゴン</td>
-                    <tr>
-                    <tr>
-                        <th colspan="9" class="th_name"><div class="monster_name">名前</div></th>
-                    </tr>
-                    <tr>
-                        <td width="50" height="10"><?php echo $this->Html->link($this->Html->image('thumb.jpg'),
-                                array('action' => 'index'),array('escape'=>false)); ?></td>
-                        <td class="td_hp">HP</td>
-                        <td class="td_hp_value">100</td>
-                        <td class="td_attack">攻撃力</td>
-                        <td class="td_attack_value">3000</td>
-                        <td class="td_attr">属性</td>
-                        <td class="td_attr_name">火</td>
-                        <td class="td_kind">タイプ</td>
-                        <td class="td_kind_name">ドラゴン</td>
-                    <tr>
 
-                </table>
-            </div>
         </div>
         <div class="action_menu">
-        <?php /*echo $this->fetch('content'); */?>
+        <?php echo $this->fetch('content'); ?>
         </div>
     </div>
 </div>

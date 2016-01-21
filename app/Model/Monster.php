@@ -98,7 +98,7 @@ class Monster extends AppModel {
 	);
 
 /**
-*‰æ‘œUploadˆ—’Ç‰Á
+*ï¿½æ‘œUploadï¿½ï¿½ï¿½ï¿½ï¿½Ç‰ï¿½
 */
 	public $actsAs = array(
 		'UploadPack.Upload' => array(
@@ -112,3 +112,4 @@ class Monster extends AppModel {
 	);
 
 }
+

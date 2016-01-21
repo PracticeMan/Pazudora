@@ -1,22 +1,22 @@
 <div class="attrs view">
-<h2><?php echo __('Attr'); ?></h2>
+<h2><?php echo __('属性'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __('番号'); ?></dt>
 		<dd>
 			<?php echo h($attr['Attr']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Attr Type'); ?></dt>
+		<dt><?php echo __('属性'); ?></dt>
 		<dd>
 			<?php echo h($attr['Attr']['attr_type']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('投稿日時'); ?></dt>
 		<dd>
 			<?php echo h($attr['Attr']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('更新日時'); ?></dt>
 		<dd>
 			<?php echo h($attr['Attr']['modified']); ?>
 			&nbsp;
@@ -26,12 +26,12 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Attr'), array('action' => 'edit', $attr['Attr']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Attr'), array('action' => 'delete', $attr['Attr']['id']), array(), __('Are you sure you want to delete # %s?', $attr['Attr']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Attrs'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Attr'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Monsters'), array('controller' => 'monsters', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Monster'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('属性を変更する'), array('action' => 'edit', $attr['Attr']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('属性を削除する'), array('action' => 'delete', $attr['Attr']['id']), array(), __('Are you sure you want to delete # %s?', $attr['Attr']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('属性リスト'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('新しく属性を追加する'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('モンスターリスト'), array('controller' => 'monsters', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('新しくモンスターを追加する'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -39,16 +39,16 @@
 	<?php if (!empty($attr['Monster'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Name'); ?></th>
-		<th><?php echo __('Hp'); ?></th>
-		<th><?php echo __('Atatck'); ?></th>
-		<th><?php echo __('Attr Id'); ?></th>
-		<th><?php echo __('Kind Id'); ?></th>
-		<th><?php echo __('Image File Name'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo __('番号'); ?></th>
+		<th><?php echo __('モンスター名'); ?></th>
+		<th><?php echo __('HP'); ?></th>
+		<th><?php echo __('攻撃力'); ?></th>
+		<th><?php echo __('属性'); ?></th>
+		<th><?php echo __('種族'); ?></th>
+		<th><?php echo __('画像'); ?></th>
+		<th><?php echo __('投稿日時'); ?></th>
+		<th><?php echo __('更新日時'); ?></th>
+		<th class="actions"><?php echo __('操作'); ?></th>
 	</tr>
 	<?php foreach ($attr['Monster'] as $monster): ?>
 		<tr>

@@ -56,15 +56,15 @@
 			<td><?php echo $monster['name']; ?></td>
 			<td><?php echo $monster['hp']; ?></td>
 			<td><?php echo $monster['atatck']; ?></td>
-			<td><?php echo $monster['attr_id']; ?></td>
-			<td><?php echo $monster['kind_id']; ?></td>
+			<td><?php echo $attr['Attr']['attr_type']; ?></td>
+			<td><?php echo $kind['Kind']['kind_type']; ?></td>
 			<td><?php echo $monster['image_file_name']; ?></td>
 			<td><?php echo $monster['created']; ?></td>
 			<td><?php echo $monster['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'monsters', 'action' => 'view', $monster['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'monsters', 'action' => 'edit', $monster['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'monsters', 'action' => 'delete', $monster['id']), array(), __('Are you sure you want to delete # %s?', $monster['id'])); ?>
+				<?php echo $this->Html->link(__('一覧'), array('controller' => 'monsters', 'action' => 'view', $monster['id'])); ?>
+				<?php echo $this->Html->link(__('変更'), array('controller' => 'monsters', 'action' => 'edit', $monster['id'])); ?>
+				<?php echo $this->Form->postLink(__('削除'), array('controller' => 'monsters', 'action' => 'delete', $monster['id']), array(), __('Are you sure you want to delete # %s?', $monster['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>

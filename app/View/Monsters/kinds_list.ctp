@@ -9,9 +9,9 @@
 				</tr>
 				<tr>
 					<td width="50" height="10">
-						<?php echo $this->Html->link($this->Html->image('thumb.jpg'),
+						<?php echo $this->Html->link($this->upload->uploadImage($kind,'Monster.image',array('style'=>'thumb')),
 							array('action' => 'index'),array('escape'=>false)); ?>
-						<?php echo $this->upload->image($kind,'Kind.image',array('style'=>'thumb'));?>
+						<?php //echo $this->upload->uploadImage($kind,'Monster.image',array('style'=>'thumb'));?>
 
 					</td>
 					<td class="td_hp">HP</td>

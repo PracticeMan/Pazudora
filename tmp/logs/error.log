@@ -1,0 +1,1255 @@
+2016-01-20 12:10:12 Error: [MissingPluginException] Plugin UploadPack could not be found.
+Exception Attributes: array (
+  'plugin' => 'UploadPack',
+)
+Request URL: /Pazudora/monsters/add
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(227): CakePlugin::path('UploadPack')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(549): App::path('Model/Behavior', 'UploadPack')
+#2 [internal function]: App::load('UploadBehavior')
+#3 [internal function]: spl_autoload_call('UploadBehavior')
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\BehaviorCollection.php(120): class_exists('UploadBehavior')
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\BehaviorCollection.php(66): BehaviorCollection->load('UploadPack.Uplo...', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(774): BehaviorCollection->init('Monster', Array)
+#7 [internal function]: Model->__construct(Array)
+#8 C:\xampp\htdocs\Pazudora\lib\Cake\Utility\ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(741): ClassRegistry::init(Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(367): Controller->loadModel('Monster')
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(405): Controller->__isset('Monster')
+#12 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(60): Controller->__get('Monster')
+#13 [internal function]: MonstersController->add()
+#14 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#15 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#16 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#17 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-01-20 22:30:52 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 対象のコンピューターによって拒否されたため、接続できませんでした。
+',
+  'enabled' => true,
+)
+Request URL: /Pazudora/Monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3644): Model->setSource('monsters')
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(27): PaginatorComponent->paginate()
+#9 [internal function]: MonstersController->index()
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#13 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-01-20 22:33:06 Error: [MissingControllerException] Controller class FireListController could not be found.
+Exception Attributes: array (
+  'class' => 'FireListController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-20 22:33:42 Error: [MissingControllerException] Controller class FireListController could not be found.
+Exception Attributes: array (
+  'class' => 'FireListController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-20 22:33:43 Error: [MissingControllerException] Controller class FireListController could not be found.
+Exception Attributes: array (
+  'class' => 'FireListController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-20 22:51:38 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/view
+Stack Trace:
+#0 [internal function]: MonstersController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:54:36 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:55:18 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:58:03 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:58:33 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:58:47 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:59:23 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 22:59:28 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view/id:1
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 23:28:35 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 21]
+2016-01-20 23:28:35 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Pazudora/monsters/
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-20 23:29:13 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 21]
+2016-01-20 23:29:13 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-20 23:32:02 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 23:35:28 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view/
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-20 23:47:22 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Route\CakeRoute.php, line 500]
+Trace:
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE\Cake\Routing\Route\CakeRoute.php, line 500
+CakeRoute::match() - CORE\Cake\Routing\Route\CakeRoute.php, line 478
+Router::url() - CORE\Cake\Routing\Router.php, line 910
+Helper::url() - CORE\Cake\View\Helper.php, line 298
+HtmlHelper::link() - CORE\Cake\View\Helper\HtmlHelper.php, line 337
+include - APP\View\Layouts\home.ctp, line 21
+View::_evaluate() - CORE\Cake\View\View.php, line 961
+View::_render() - CORE\Cake\View\View.php, line 923
+View::renderLayout() - CORE\Cake\View\View.php, line 546
+View::render() - CORE\Cake\View\View.php, line 481
+Controller::render() - CORE\Cake\Controller\Controller.php, line 960
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2016-01-20 23:47:24 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Route\CakeRoute.php, line 500]
+Trace:
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE\Cake\Routing\Route\CakeRoute.php, line 500
+CakeRoute::match() - CORE\Cake\Routing\Route\CakeRoute.php, line 478
+Router::url() - CORE\Cake\Routing\Router.php, line 910
+Helper::url() - CORE\Cake\View\Helper.php, line 298
+HtmlHelper::link() - CORE\Cake\View\Helper\HtmlHelper.php, line 337
+include - APP\View\Layouts\home.ctp, line 21
+View::_evaluate() - CORE\Cake\View\View.php, line 961
+View::_render() - CORE\Cake\View\View.php, line 923
+View::renderLayout() - CORE\Cake\View\View.php, line 546
+View::render() - CORE\Cake\View\View.php, line 481
+Controller::render() - CORE\Cake\Controller\Controller.php, line 960
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2016-01-20 23:47:27 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Route\CakeRoute.php, line 500]
+Trace:
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE\Cake\Routing\Route\CakeRoute.php, line 500
+CakeRoute::match() - CORE\Cake\Routing\Route\CakeRoute.php, line 478
+Router::url() - CORE\Cake\Routing\Router.php, line 910
+Helper::url() - CORE\Cake\View\Helper.php, line 298
+HtmlHelper::link() - CORE\Cake\View\Helper\HtmlHelper.php, line 337
+include - APP\View\Layouts\home.ctp, line 21
+View::_evaluate() - CORE\Cake\View\View.php, line 961
+View::_render() - CORE\Cake\View\View.php, line 923
+View::renderLayout() - CORE\Cake\View\View.php, line 546
+View::render() - CORE\Cake\View\View.php, line 481
+Controller::render() - CORE\Cake\Controller\Controller.php, line 960
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2016-01-20 23:49:54 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Route\CakeRoute.php, line 500]
+Trace:
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE\Cake\Routing\Route\CakeRoute.php, line 500
+CakeRoute::match() - CORE\Cake\Routing\Route\CakeRoute.php, line 478
+Router::url() - CORE\Cake\Routing\Router.php, line 910
+Helper::url() - CORE\Cake\View\Helper.php, line 298
+HtmlHelper::link() - CORE\Cake\View\Helper\HtmlHelper.php, line 337
+include - APP\View\Layouts\home.ctp, line 21
+View::_evaluate() - CORE\Cake\View\View.php, line 961
+View::_render() - CORE\Cake\View\View.php, line 923
+View::renderLayout() - CORE\Cake\View\View.php, line 546
+View::render() - CORE\Cake\View\View.php, line 481
+Controller::render() - CORE\Cake\Controller\Controller.php, line 960
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2016-01-20 23:49:55 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Route\CakeRoute.php, line 500]
+Trace:
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+CakeRoute::_writeUrl() - CORE\Cake\Routing\Route\CakeRoute.php, line 500
+CakeRoute::match() - CORE\Cake\Routing\Route\CakeRoute.php, line 478
+Router::url() - CORE\Cake\Routing\Router.php, line 910
+Helper::url() - CORE\Cake\View\Helper.php, line 298
+HtmlHelper::link() - CORE\Cake\View\Helper\HtmlHelper.php, line 337
+include - APP\View\Layouts\home.ctp, line 21
+View::_evaluate() - CORE\Cake\View\View.php, line 961
+View::_render() - CORE\Cake\View\View.php, line 923
+View::renderLayout() - CORE\Cake\View\View.php, line 546
+View::render() - CORE\Cake\View\View.php, line 481
+Controller::render() - CORE\Cake\Controller\Controller.php, line 960
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2016-01-20 23:52:21 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/view
+Stack Trace:
+#0 [internal function]: MonstersController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:14:40 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:15:10 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:26:54 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:31:06 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:31:35 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:31:41 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:33:56 Error: Fatal Error (1): Cannot use object of type View as array in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:33:56 Error: [FatalErrorException] Cannot use object of type View as array
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:35:46 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:36:27 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:36:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:36:43 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:36:43 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:36:52 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:36:52 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/Monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:38:14 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 00:46:39 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:46:39 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:47:10 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:47:10 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:47:10 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:47:10 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:47:11 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:47:11 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:51:52 Error: [MissingControllerException] Controller class PazudoraController could not be found.
+Exception Attributes: array (
+  'class' => 'PazudoraController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/pazudora/Kinds
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 00:51:52 Error: [MissingControllerException] Controller class PazudoraController could not be found.
+Exception Attributes: array (
+  'class' => 'PazudoraController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/pazudora/kinds
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 00:51:53 Error: [MissingControllerException] Controller class PazudoraController could not be found.
+Exception Attributes: array (
+  'class' => 'PazudoraController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/pazudora/kind
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 00:52:02 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 100]
+2016-01-21 00:52:02 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 100, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 100, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:57:49 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:57:49 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:58:12 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:58:12 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:58:13 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:58:13 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:58:32 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:58:32 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 00:58:54 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 00:58:54 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:21:12 Error: Fatal Error (1): Using $this when not in object context in [C:\xampp\htdocs\Pazudora\app\Model\Monster.php, line 116]
+2016-01-21 10:21:12 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:21:18 Error: Fatal Error (1): Using $this when not in object context in [C:\xampp\htdocs\Pazudora\app\Model\Monster.php, line 116]
+2016-01-21 10:21:18 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:21:27 Error: [MissingControllerException] Controller class PazudoraController could not be found.
+Exception Attributes: array (
+  'class' => 'PazudoraController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/pazudora/kind
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 10:21:35 Error: [MissingControllerException] Controller class PazudoraController could not be found.
+Exception Attributes: array (
+  'class' => 'PazudoraController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/pazudora/kind
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 10:21:46 Error: [MissingControllerException] Controller class KindController could not be found.
+Exception Attributes: array (
+  'class' => 'KindController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/kind
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 10:22:14 Error: Fatal Error (1): Using $this when not in object context in [C:\xampp\htdocs\Pazudora\app\Model\Monster.php, line 116]
+2016-01-21 10:22:14 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\\xampp\\htdocs...', 116, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:24:41 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 10:24:41 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:24:43 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 10:24:43 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:25:08 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:25:08 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:27:45 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 10:27:45 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:27:48 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Layouts\home.ctp, line 20]
+2016-01-21 10:27:48 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:31:41 Error: [MissingControllerException] Controller class FireListController could not be found.
+Exception Attributes: array (
+  'class' => 'FireListController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 10:32:24 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:32:24 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:33:17 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:33:17 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:33:18 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:33:18 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:33:36 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:33:36 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:33:53 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:33:53 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:33:54 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:33:54 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:34:13 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:34:13 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:34:35 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:34:35 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:35:46 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:35:46 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:35:47 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 10:35:47 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:36:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monsters.attr_id' in 'where clause'
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(34): Model->find('all', Array)
+#7 [internal function]: MonstersController->fire_list()
+#8 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-21 10:37:50 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Monsters\fire_list.ctp, line 22]
+2016-01-21 10:37:50 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 22, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 22, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:49:22 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Monsters\fire_list.ctp, line 27]
+2016-01-21 10:49:22 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 27, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 27, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 10:58:27 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 34]
+2016-01-21 10:58:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 34, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 34, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 11:00:41 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 30]
+2016-01-21 11:00:41 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 30, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 12:32:08 Error: Fatal Error (1): Function name must be a string in [C:\xampp\htdocs\Pazudora\app\View\Monsters\fire_list.ctp, line 24]
+2016-01-21 12:32:08 Error: [FatalErrorException] Function name must be a string
+Request URL: /Pazudora/monsters/fire_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\\xampp\\htdocs...', 24, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\\xampp\\htdocs...', 24, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 08:10:07 Error: [MissingActionException] Action MonstersController::water_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'water_list',
+)
+Request URL: /Pazudora/Monsters/water_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 08:20:05 Error: [MissingViewException] View file "Monsters\wood_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Monsters\\wood_list.ctp',
+)
+Request URL: /Pazudora/Monsters/wood_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:26:17 Error: [MissingViewException] View file "Monsters\wood_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Monsters\\wood_list.ctp',
+)
+Request URL: /Pazudora/Monsters/wood_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:29:59 Error: [MissingViewException] View file "Monsters\wood_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Monsters\\wood_list.ctp',
+)
+Request URL: /Pazudora/Monsters/wood_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:31:00 Error: [MissingViewException] View file "Monsters\wood_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Monsters\\wood_list.ctp',
+)
+Request URL: /Pazudora/Monsters/wood_list
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:37:14 Error: [MissingActionException] Action MonstersController::wood_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'wood_list',
+)
+Request URL: /Pazudora/Monsters/wood_list/3
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:39:42 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/3
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:40:36 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/3
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:42:40 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/3
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:42:46 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:42:48 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:42:51 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:45:26 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:46:11 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:47:07 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:47:28 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:47:49 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:48:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monster.attrs_id' in 'where clause'
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(66): Model->find('all', Array)
+#7 [internal function]: MonstersController->attrs_list('1')
+#8 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-21 10:50:36 Error: [MissingActionException] Action MonstersController::atrris_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'atrris_list',
+)
+Request URL: /Pazudora/Monsters/atrris_list/3
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 10:51:12 Error: [MissingActionException] Action MonstersController::attrs_lis() could not be found.
+Exception Attributes: array (
+  'controller' => 'MonstersController',
+  'action' => 'attrs_lis',
+)
+Request URL: /Pazudora/Monsters/attrs_lis/2
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 11:27:23 Error: [MissingModelException] Monsters
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('Monsters')
+#1 [internal function]: MonstersController->attrs_list('1')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:27:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monster' in 'where clause'
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate(Array)
+#8 [internal function]: MonstersController->attrs_list('1')
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#12 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-01-21 11:29:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monster' in 'where clause'
+Request URL: /Pazudora/Monsters/attrs_list/5
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate(Array)
+#8 [internal function]: MonstersController->attrs_list('5')
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#12 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-01-21 11:29:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monster' in 'where clause'
+Request URL: /Pazudora/Monsters/attrs_list/5
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate(Array)
+#8 [internal function]: MonstersController->attrs_list('5')
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#12 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-01-21 11:29:31 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 51]
+2016-01-21 11:29:31 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Pazudora/Monsters/attrs_list/4
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 11:31:46 Error: [MissingModelException] attrs_list
+Request URL: /Pazudora/Monsters/attrs_list/2
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('attrs_list')
+#1 [internal function]: MonstersController->attrs_list('2')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:33:14 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 51]
+2016-01-21 11:33:14 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Pazudora/Monsters/attrs_list/2
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 11:33:22 Error: [MissingModelException] attrs_list
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('attrs_list')
+#1 [internal function]: MonstersController->attrs_list('1')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:33:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monster' in 'where clause'
+Request URL: /Pazudora/Monsters/attrs_list/5
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate(Array)
+#8 [internal function]: MonstersController->attrs_list('5')
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#12 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-01-21 11:33:52 Error: [MissingModelException] Monsters
+Request URL: /Pazudora/Monsters/attrs_list/4
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('Monsters')
+#1 [internal function]: MonstersController->attrs_list('4')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:34:05 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 51]
+2016-01-21 11:34:05 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Pazudora/Monsters/attrs_list/3
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 51, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 11:34:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Monster' in 'where clause'
+Request URL: /Pazudora/Monsters/attrs_list/2
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Monster...', Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `Monster...', Array, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Monster...', false)
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(3022): DboSource->read(Object(Monster), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate(Array)
+#8 [internal function]: MonstersController->attrs_list('2')
+#9 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#10 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#12 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-01-21 11:36:24 Error: Fatal Error (1): Call to a member function set() on array in [C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php, line 51]
+2016-01-21 11:36:24 Error: [FatalErrorException] Call to a member function set() on array
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 51, Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 51, Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 11:37:07 Error: [MissingModelException] monster
+Request URL: /Pazudora/Monsters/attrs_list/2
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('monster')
+#1 [internal function]: MonstersController->attrs_list('2')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:39:24 Error: [MissingModelException] monster
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('monster')
+#1 [internal function]: MonstersController->attrs_list('1')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:41:59 Error: [MissingModelException] monster
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(57): PaginatorComponent->paginate('monster')
+#1 [internal function]: MonstersController->attrs_list('1')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:43:20 Error: [MissingModelException] monster
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(57): PaginatorComponent->paginate('monster')
+#1 [internal function]: MonstersController->attrs_list('1')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-21 11:46:13 Error: [MissingModelException] Monsters
+Request URL: /Pazudora/Monsters/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\Controller\MonstersController.php(51): PaginatorComponent->paginate('Monsters')
+#1 [internal function]: MonstersController->attrs_list('1')
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

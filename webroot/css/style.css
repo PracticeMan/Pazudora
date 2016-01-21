@@ -1,0 +1,140 @@
+
+
+body{
+	margin:0px;
+	background:#333333;
+}
+
+.wrapper{
+	background:#333333;
+	margin-left:auto;
+    margin-right:auto;
+	width:700px;
+	color: #ffffff;
+
+}
+
+.main{
+	position: relative;
+	float:left;
+	width:700px;
+	height:1000px;
+	background:#333333;
+	color: #ffffff;
+
+	margin:0 auto 0 auto;
+}
+
+.top_image{
+	position: relative;
+	top:20px;
+	text-align: center;
+}
+.topics{
+	margin:0 auto 0 auto;
+}
+.attr_field{
+	margin:0 auto 0 auto;
+	width:400px;
+}
+
+.attr_link a{
+	position: relative;
+	left:40px;
+	padding-right:5px;
+	padding-left: 5px;
+}
+.kind_field{
+	margin:0 auto 0 auto;
+	width:400px;
+}
+.kind_link a{
+	position: relative;
+	left:30px;
+	padding-right:10px;
+	padding-left: 10px;
+
+}
+.menu_field {
+	position: relative;
+	right:20px;
+	bottom:253px;
+	float: left;
+	color: #ffffff;
+	height:233px;
+	width:80px;
+}
+.actions{
+	width:100px;
+}
+.actions li{
+	position: relative;
+	bottom:10px;
+	right:30px;
+	width:120px;
+	list-style:none;
+	padding-bottom:20px;
+
+}
+.table table{
+	border-collapse:collapse;
+	position: relative;
+	bottom:220px;
+	right:18px;
+	margin:0 auto 0 auto;
+	width:800px;
+	text-align: center;
+	border-style:solid;
+	border-width:1px;
+}
+.table td{
+	border-style:solid;
+	border-width:1px;
+	border-color: #777777;
+}
+.th_name{
+	background: #edf1ff;
+}
+.monster_name{
+	float: left;
+}
+.td_hp{
+	width:30px;
+	background: #aaaaaa;
+	color: #000000;
+}
+.td_hp_value{
+	width:50px;
+	background: #ffffe5;
+	font-size: 18px;
+}
+.td_attack{
+	width:60px;
+	background: #aaaaaa;
+}
+.td_attack_value{
+	width:80px;
+	background: #ffffe5;
+	font-size: 18px;
+}
+.td_attr{
+	width:60px;
+	background: #aaaaaa;
+}
+.td_attr_name{
+	width:50px;
+	background: #ffffe5;
+}
+.td_kind{
+	width:60px;
+	background: #aaaaaa;
+}
+.td_kind_name{
+	width:80px;
+	background: #ffffe5;
+}
+
+.pagenator{
+	position: relative;
+	bottom:200px;
+}

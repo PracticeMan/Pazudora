@@ -1,12 +1,12 @@
 <div class="kinds index">
-	<h2><?php echo __('Kinds'); ?></h2>
+	<h2><?php echo __('種族'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('kind_type'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('番号'); ?></th>
+			<th><?php echo $this->Paginator->sort('種族'); ?></th>
+			<th><?php echo $this->Paginator->sort('投稿日時'); ?></th>
+			<th><?php echo $this->Paginator->sort('更新日時'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -18,9 +18,9 @@
 		<td><?php echo h($kind['Kind']['created']); ?>&nbsp;</td>
 		<td><?php echo h($kind['Kind']['modified']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $kind['Kind']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $kind['Kind']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $kind['Kind']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $kind['Kind']['id']))); ?>
+			<?php echo $this->Html->link(__('一覧'), array('action' => 'view', $kind['Kind']['id'])); ?>
+			<?php echo $this->Html->link(__('変更'), array('action' => 'edit', $kind['Kind']['id'])); ?>
+			<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $kind['Kind']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $kind['Kind']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -43,8 +43,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Kind'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Monsters'), array('controller' => 'monsters', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Monster'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('新しく種族を追加する'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('モンスターリスト'), array('controller' => 'monsters', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('新しくモンスターを追加する'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

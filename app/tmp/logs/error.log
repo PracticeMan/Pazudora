@@ -832,3 +832,111 @@ Stack Trace:
 #3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
 #4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-01-21 10:01:20 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:01:51 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:03:10 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:04:14 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:04:17 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:04:41 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:04:41 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:04:48 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:05:09 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:06:16 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:06:52 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/edit
+Stack Trace:
+#0 [internal function]: MonstersController->edit()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 10:18:24 Error: [NotFoundException] Invalid monster
+Request URL: /Pazudora/monsters/view
+Stack Trace:
+#0 [internal function]: MonstersController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MonstersController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(MonstersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

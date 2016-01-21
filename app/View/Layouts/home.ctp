@@ -20,13 +20,13 @@
                     <?php echo $this->Html->link($this->Html->image('fire_icon.png'),
                             array('action' => 'fire_list'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('water_icon.png'),
-                        array('action' => 'index'),array('escape'=>false)); ?>
+                        array('action' => 'water_list'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('wood_icon.png'),
-                        array('action' => 'index'),array('escape'=>false)); ?>
+                        array('action' => 'wood_list'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('light_icon.png'),
-                        array('action' => 'index'),array('escape'=>false)); ?>
+                        array('action' => 'light_list'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('dark_icon.png'),
-                        array('action' => 'index'),array('escape'=>false)); ?>
+                        array('action' => 'dark_list'),array('escape'=>false)); ?>
                 </div><br>
                 </fieldset>
                 <fieldset class="kind_field">

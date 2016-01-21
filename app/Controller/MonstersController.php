@@ -40,13 +40,30 @@ class MonstersController extends AppController {
 		$this->set('monsters', $this->Paginator->paginate());
 	}
 
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
+	public function water_list() {
+		$water = $this->Monster->find('all',array(
+			'conditions' => array(
+				'Monster.attr_id' => array( '2' )
+			)
+		));
+		$this->set('water',$water);
+		$this->layout = 'home';
+		$this->Monster->recursive = 0;
+		$this->set('monsters', $this->Paginator->paginate());
+	}
+
+	public function wood_list() {
+		$wood = $this->Monster->find('all',array(
+			'conditions' => array(
+				'Monster.attr_id' => array( '3' )
+			)
+		));
+		$this->set('water',$wood);
+		$this->layout = 'home';
+		$this->Monster->recursive = 0;
+		$this->set('monsters', $this->Paginator->paginate());
+	}
+
 	public function view($id = null) {
 		if (!$this->Monster->exists($id)) {
 			throw new NotFoundException(__('Invalid monster'));

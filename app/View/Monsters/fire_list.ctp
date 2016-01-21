@@ -15,9 +15,9 @@
 				<td class="td_attack">攻撃力</td>
 				<td class="td_attack_value"><?php echo h($fire['Monster']['atatck']); ?>&nbsp;</td>
 				<td class="td_attr">属性</td>
-				<td class="td_attr_name"><?php echo h($fire['Attr']['id']); ?>&nbsp;</td>
+				<td class="td_attr_name"><?php echo h($fire['Attr']['attr_type']); ?>&nbsp;</td>
 				<td class="td_kind">タイプ</td>
-				<td class="td_kind_name"><?php echo h($fire['Kind']['id']); ?>&nbsp;</td>
+				<td class="td_kind_name"><?php echo h($fire['Kind']['kind_type']); ?>&nbsp;</td>
 			</tr>
 			<?php endforeach; ?>
 		</table>

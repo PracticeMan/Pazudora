@@ -15,7 +15,13 @@ class MonstersController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Session');
-	public $helpers = array('UploadPack.Upload');
+
+	public $paginate = array(
+		'limit' => 5,
+		'order' => array(
+			'Monster.id' => 'asc'
+		)
+	);
 /**
  * index method
  *
@@ -33,40 +39,16 @@ class MonstersController extends AppController {
 		$this->set('monsters', $this->Paginator->paginate());
 	}
 
-	public function fire_list() {
-		$fire = $this->Monster->find('all',array(
+	public function attrs_list($attrid) {
+		$attrs = $this->Monster->find('all',array(
 			'conditions' => array(
-				'Monster.attr_id' => array( '1' )
+				'Monster.attr_id' => array($attrid )
 			)
 		));
-		$this->set('fire',$fire);
+		$this->set('attrs',$attrs);
 		$this->layout = 'home';
 		$this->Monster->recursive = 0;
-		$this->set('monsters', $this->Paginator->paginate());
-	}
-
-	public function water_list() {
-		$water = $this->Monster->find('all',array(
-			'conditions' => array(
-				'Monster.attr_id' => array( '2' )
-			)
-		));
-		$this->set('water',$water);
-		$this->layout = 'home';
-		$this->Monster->recursive = 0;
-		$this->set('monsters', $this->Paginator->paginate());
-	}
-
-	public function wood_list() {
-		$wood = $this->Monster->find('all',array(
-			'conditions' => array(
-				'Monster.attr_id' => array( '3' )
-			)
-		));
-		$this->set('water',$wood);
-		$this->layout = 'home';
-		$this->Monster->recursive = 0;
-		$this->set('monsters', $this->Paginator->paginate());
+		$this->set('attrs_list', $this->Paginator->paginate());
 	}
 
 	public function kinds_list($kindid) {

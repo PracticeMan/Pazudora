@@ -35,6 +35,7 @@ class KindsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout = 'kind_home';
 		if (!$this->Kind->exists($id)) {
 			throw new NotFoundException(__('Invalid kind'));
 		}
@@ -48,6 +49,7 @@ class KindsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout = 'kind_home';
 		if ($this->request->is('post')) {
 			$this->Kind->create();
 			if ($this->Kind->save($this->request->data)) {
@@ -67,6 +69,7 @@ class KindsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout = 'kind_home';
 		if (!$this->Kind->exists($id)) {
 			throw new NotFoundException(__('Invalid kind'));
 		}

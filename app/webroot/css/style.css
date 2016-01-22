@@ -214,13 +214,6 @@ span:hover{
 	font-size: 18px;
 }
 
-<<<<<<< HEAD
-.top_image_zukan{
-	position: relative; top: 0; left:130px;
-}
-.actions a{
-	color: #ffffff;
-=======
 .kind_add_field{
 	position: relative;
 	left:4px;
@@ -258,7 +251,6 @@ span:hover{
 	border-style:solid;
 	border-width:1px;
 	border-color: #777777;
->>>>>>> 632f8b14820496b1ef7252dbe4f4c07a3640179c
 }
 
 #td_id{

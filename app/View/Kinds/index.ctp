@@ -5,10 +5,10 @@
 			<thead>
 			<tr class="table_manu">
 					<th><?php echo $this->Paginator->sort('id'); ?></th>
-					<th><?php echo $this->Paginator->sort('kind_type'); ?></th>
-					<th><?php echo $this->Paginator->sort('created'); ?></th>
-					<th><?php echo $this->Paginator->sort('modified'); ?></th>
-					<th class="actions"><?php echo __('Actions'); ?></th>
+					<th><?php echo $this->Paginator->sort('属性'); ?></th>
+					<th><?php echo $this->Paginator->sort('作成日'); ?></th>
+					<th><?php echo $this->Paginator->sort('最終編集日'); ?></th>
+					<th class="actions"><?php echo __('編集'); ?></th>
 			</tr>
 			</thead>
 			<?php foreach ($kinds as $kind): ?>

@@ -1,70 +1,67 @@
 <div class="kinds view">
-<h2><?php echo __('種族'); ?></h2>
-	<dl>
-		<dt><?php echo __('番号'); ?></dt>
-		<dd>
-			<?php echo h($kind['Kind']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('種族'); ?></dt>
-		<dd>
-			<?php echo h($kind['Kind']['kind_type']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('投稿日時'); ?></dt>
-		<dd>
-			<?php echo h($kind['Kind']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('更新日時'); ?></dt>
-		<dd>
-			<?php echo h($kind['Kind']['modified']); ?>
-			&nbsp;
-		</dd>
-	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('種族を変更する'), array('action' => 'edit', $kind['Kind']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('種族を削除する'), array('action' => 'delete', $kind['Kind']['id']), array(), __('Are you sure you want to delete # %s?', $kind['Kind']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('種族リスト'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('新しく種族を追加する'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('トップページに戻る'), array('controller' => 'monsters', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('新しくモンスターを追加する'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
-	</ul>
+	<table class="kind_table" cellpadding="0" cellspacing="0">
+		<thead>
+		<tr class="table_manu">
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('kind_type'); ?></th>
+			<th><?php echo $this->Paginator->sort('created'); ?></th>
+			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo __('Actions'); ?></th>
+		</tr>
+		</thead>
+			<tr>
+				<td class="td_id"><?php echo h($kind['Kind']['id']); ?>&nbsp;</td>
+				<td class="td_type"><?php echo h($kind['Kind']['kind_type']); ?>&nbsp;</td>
+				<td class="td_create"><?php echo strftime('%Y / %m / %d - %H : %M',strtotime($kind['Kind']['created'])); ?>&nbsp;</td>
+				<td class="td_modified"><?php echo strftime('%Y / %m / %d  - %H : %M',strtotime($kind['Kind']['modified'])); ?>&nbsp;</td>
+				<td class="td_actions">
+					<?php echo $this->Html->link($this->Html->image('view_icon.png'),
+						array('action' => 'view', $kind['Kind']['id']),array('escape'=>false)); ?>
+					<?php echo $this->Html->link($this->Html->image('edit_icon.png'),
+						array('action' => 'edit', $kind['Kind']['id']),array('escape'=>false)); ?>
+					<?php echo $this->Html->link($this->Html->image('delete_icon.png'),
+						array('action' => 'delete', $kind['Kind']['id']),array('escape'=>false),
+						array('confirm' => __('Are you sure you want to delete # %s?', $kind['Kind']['id']))); ?>
+				</td>
+			</tr>
+	</table>
+
 </div>
 <div class="related">
 	<h3><?php echo __('Related Monsters'); ?></h3>
 	<?php if (!empty($kind['Monster'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
+	<table class="view_table" cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('番号'); ?></th>
-		<th><?php echo __('モンスター名'); ?></th>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Name'); ?></th>
 		<th><?php echo __('Hp'); ?></th>
 		<th><?php echo __('攻撃力'); ?></th>
-		<th><?php echo __('属性'); ?></th>
-		<th><?php echo __('種族'); ?></th>
+		<th><?php echo __('属性 Id'); ?></th>
+		<th><?php echo __('種族 Id'); ?></th>
 		<th><?php echo __('Image File Name'); ?></th>
-		<th><?php echo __('投稿日時'); ?></th>
-		<th><?php echo __('更新日時'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo __('作成日'); ?></th>
+		<th><?php echo __('最終編集日'); ?></th>
+		<th class="actions"><?php echo __('編集'); ?></th>
 	</tr>
 	<?php foreach ($kind['Monster'] as $monster): ?>
 		<tr>
-			<td><?php echo $monster['id']; ?></td>
-			<td><?php echo $monster['name']; ?></td>
-			<td><?php echo $monster['hp']; ?></td>
-			<td><?php echo $monster['atatck']; ?></td>
-			<td><?php echo $attr['Attr']['attr_type']; ?></td>
-			<td><?php echo $kind['Kind']['kind_type']; ?></td>
-			<td><?php echo $monster['image_file_name']; ?></td>
-			<td><?php echo $monster['created']; ?></td>
-			<td><?php echo $monster['modified']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('一覧'), array('controller' => 'monsters', 'action' => 'view', $monster['id'])); ?>
-				<?php echo $this->Html->link(__('変更'), array('controller' => 'monsters', 'action' => 'edit', $monster['id'])); ?>
-				<?php echo $this->Form->postLink(__('削除'), array('controller' => 'monsters', 'action' => 'delete', $monster['id']), array(), __('Are you sure you want to delete # %s?', $monster['id'])); ?>
+			<td id="td_id"><?php echo $monster['id']; ?></td>
+			<td id="td_name"><?php echo $monster['name']; ?></td>
+			<td id="td_hp"><?php echo $monster['hp']; ?></td>
+			<td id="td_attack"><?php echo $monster['atatck']; ?></td>
+			<td id="td_attr_id"><?php echo $monster['attr_id']; ?></td>
+			<td id="td_kind_id"><?php echo $monster['kind_id']; ?></td>
+			<td id="td_image_name"><?php echo $monster['image_file_name']; ?></td>
+			<td id="td_created"><?php echo $monster['created']; ?></td>
+			<td id="td_modified"><?php echo $monster['modified']; ?></td>
+			<td id="td_action">
+				<?php echo $this->Html->link($this->Html->image('view_icon.png'),
+					array('action' => 'view', $kind['Kind']['id']),array('escape'=>false)); ?>
+				<?php echo $this->Html->link($this->Html->image('edit_icon.png'),
+					array('action' => 'edit', $kind['Kind']['id']),array('escape'=>false)); ?>
+				<?php echo $this->Html->link($this->Html->image('delete_icon.png'),
+					array('action' => 'delete', $kind['Kind']['id']),array('escape'=>false),
+					array('confirm' => __('Are you sure you want to delete # %s?', $kind['Kind']['id']))); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>

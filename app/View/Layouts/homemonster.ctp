@@ -8,7 +8,6 @@
 <?php echo $this->Html->css('style'); ?>
 <body>
 <div class="wrapper">
-<<<<<<< HEAD
     <DIV align="right"> 
     <h1>モンスター名:<?php echo $monster['Monster']['name']; ?>　図鑑 No.
         <?php echo $monster['Monster']['id']; ?>
@@ -22,12 +21,6 @@
             echo $this->Html->link($this->upload->uploadImage($monster,'Monster.image'),array('action' => 'index'),array('escape'=>false));
         ?>
     </h1>        
-=======
-    <h1>モンスター名表示　図鑑 No.</h1>
-    <h1 class="top_image"> <?php echo $this->Html->link($this->Html->image('ip1_001.jpg'),
-            array('action' => 'index'),array('escape'=>false)); ?></h1>
-            
->>>>>>> 632f8b14820496b1ef7252dbe4f4c07a3640179c
 
     <div class="main">
         <div class="topics">

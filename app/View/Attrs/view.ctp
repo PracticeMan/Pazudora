@@ -1,27 +1,31 @@
 <div class="attrs view">
-<h2><?php echo __('属性'); ?></h2>
-	<dl>
-		<dt><?php echo __('番号'); ?></dt>
-		<dd>
-			<?php echo h($attr['Attr']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('属性'); ?></dt>
-		<dd>
-			<?php echo h($attr['Attr']['attr_type']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('投稿日時'); ?></dt>
-		<dd>
-			<?php echo h($attr['Attr']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('更新日時'); ?></dt>
-		<dd>
-			<?php echo h($attr['Attr']['modified']); ?>
-			&nbsp;
-		</dd>
-	</dl>
+	<table class="kind_table" cellpadding="0" cellspacing="0">
+		<thead>
+		<tr class="table_manu">
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('kind_type'); ?></th>
+			<th><?php echo $this->Paginator->sort('created'); ?></th>
+			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo __('Actions'); ?></th>
+		</tr>
+		</thead>
+		<tr>
+			<td class="td_id"><?php echo h($attr['Attr']['id']); ?>&nbsp;</td>
+			<td class="td_type"><?php echo h($attr['Attr']['attr_type']); ?>&nbsp;</td>
+			<td class="td_create"><?php echo strftime('%Y / %m / %d - %H : %M',strtotime($attr['Attr']['created'])); ?>&nbsp;</td>
+			<td class="td_modified"><?php echo strftime('%Y / %m / %d  - %H : %M',strtotime($attr['Attr']['modified'])); ?>&nbsp;</td>
+			<td class="td_actions">
+				<?php echo $this->Html->link($this->Html->image('view_icon.png'),
+					array('action' => 'view', $attr['Attr']['id']),array('escape'=>false)); ?>
+				<?php echo $this->Html->link($this->Html->image('edit_icon.png'),
+					array('action' => 'edit', $attr['Attr']['id']),array('escape'=>false)); ?>
+				<?php echo $this->Html->link($this->Html->image('delete_icon.png'),
+					array('action' => 'delete', $attr['Attr']['id']),array('escape'=>false),
+					array('confirm' => __('Are you sure you want to delete # %s?', $attr['Attr']['id']))); ?>
+			</td>
+		</tr>
+	</table>
+
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

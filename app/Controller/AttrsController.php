@@ -22,6 +22,7 @@ class AttrsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'kind_home';
 		$this->Attr->recursive = 0;
 		$this->set('attrs', $this->Paginator->paginate());
 	}
@@ -34,6 +35,7 @@ class AttrsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout = 'kind_home';
 		if (!$this->Attr->exists($id)) {
 			throw new NotFoundException(__('Invalid attr'));
 		}
@@ -47,6 +49,7 @@ class AttrsController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout = 'kind_home';
 		if ($this->request->is('post')) {
 			$this->Attr->create();
 			if ($this->Attr->save($this->request->data)) {
@@ -66,6 +69,7 @@ class AttrsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout = 'kind_home';
 		if (!$this->Attr->exists($id)) {
 			throw new NotFoundException(__('Invalid attr'));
 		}
@@ -90,6 +94,7 @@ class AttrsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		$this->layout = 'kind_home';
 		$this->Attr->id = $id;
 		if (!$this->Attr->exists()) {
 			throw new NotFoundException(__('Invalid attr'));

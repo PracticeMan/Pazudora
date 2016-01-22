@@ -64,6 +64,7 @@ class MonstersController extends AppController {
 	}
 
 	public function view($id = null) {
+		$this->layout = 'home';
 		if (!$this->Monster->exists($id)) {
 			throw new NotFoundException(__('Invalid monster'));
 		}
@@ -77,6 +78,7 @@ class MonstersController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout = 'home';
 		if ($this->request->is('post')) {
 			$this->Monster->create();
 			if ($this->Monster->save($this->request->data)) {
@@ -99,6 +101,7 @@ class MonstersController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout = 'home';
 		if (!$this->Monster->exists($id)) {
 			throw new NotFoundException(__('Invalid monster'));
 		}
@@ -126,6 +129,7 @@ class MonstersController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		$this->layout = 'home';
 		$this->Monster->id = $id;
 		if (!$this->Monster->exists()) {
 			throw new NotFoundException(__('Invalid monster'));

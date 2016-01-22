@@ -1,13 +1,13 @@
 <div class="attrs form">
-	<?php echo $this->Form->create('Attr'); ?>
+<?php echo $this->Form->create('Attr'); ?>
 	<fieldset>
 		<legend><?php echo __('属性の変更'); ?></legend>
-		<?php
+	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('attr_type',array('label' => '属性'));
-		?>
+	?>
 	</fieldset>
-	<?php echo $this->Form->end(__('変更')); ?>
+<?php echo $this->Form->end(__('変更')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

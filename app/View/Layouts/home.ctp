@@ -18,7 +18,7 @@
                     <legend><h3>属性検索</h3></legend><br>
                 <div class="attr_link">
                     <?php echo $this->Html->link($this->Html->image('fire_icon.png'),
-                        array('action' => 'attrs_list/1'),array('escape'=>false)); ?>
+                            array('action' => 'attrs_list/1'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('water_icon.png'),
                         array('action' => 'attrs_list/2'),array('escape'=>false)); ?>
                     <?php echo $this->Html->link($this->Html->image('wood_icon.png'),

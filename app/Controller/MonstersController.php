@@ -33,37 +33,13 @@ class MonstersController extends AppController {
 		$this->set('monsters', $this->Paginator->paginate());
 	}
 
-	public function fire_list() {
-		$fire = $this->Monster->find('all',array(
+	public function attrs_list($attrid) {
+		$attrs = $this->Monster->find('all',array(
 			'conditions' => array(
-				'Monster.attr_id' => array( '1' )
+				'Monster.attr_id' => array( $attrid )
 			)
 		));
-		$this->set('fire',$fire);
-		$this->layout = 'home';
-		$this->Monster->recursive = 0;
-		$this->set('monsters', $this->Paginator->paginate());
-	}
-
-	public function water_list() {
-		$water = $this->Monster->find('all',array(
-			'conditions' => array(
-				'Monster.attr_id' => array( '2' )
-			)
-		));
-		$this->set('water',$water);
-		$this->layout = 'home';
-		$this->Monster->recursive = 0;
-		$this->set('monsters', $this->Paginator->paginate());
-	}
-
-	public function wood_list() {
-		$wood = $this->Monster->find('all',array(
-			'conditions' => array(
-				'Monster.attr_id' => array( '3' )
-			)
-		));
-		$this->set('water',$wood);
+		$this->set('attrs',$attrs);
 		$this->layout = 'home';
 		$this->Monster->recursive = 0;
 		$this->set('monsters', $this->Paginator->paginate());
@@ -80,17 +56,7 @@ class MonstersController extends AppController {
 		$this->Monster->recursive = 0;
 		$this->set('monsters', $this->Paginator->paginate());
 	}
-	public function attrs_list($attrid) {
-		$attrs = $this->Monster->find('all',array(
-			'conditions' => array(
-				'Monster.attr_id' => array( $attrid )
-			)
-		));
-		$this->set('attrs',$attrs);
-		$this->layout = 'home';
-		$this->Monster->recursive = 0;
-		$this->set('monsters', $this->Paginator->paginate());
-	}
+
 	public function view($id = null) {
 		if (!$this->Monster->exists($id)) {
 			throw new NotFoundException(__('Invalid monster'));

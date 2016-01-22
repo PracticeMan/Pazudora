@@ -22,6 +22,7 @@ class KindsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'kind_home';
 		$this->Kind->recursive = 0;
 		$this->set('kinds', $this->Paginator->paginate());
 	}

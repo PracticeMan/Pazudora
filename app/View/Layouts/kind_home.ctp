@@ -66,7 +66,7 @@
             <legend><h3>MENU</h3></legend><br>
             <div class="actions">
                 <ul>
-                    <li><?php echo $this->Html->link(__('New Monster'), array('action' => 'add')); ?></li>
+                    <li><?php echo $this->Html->link(__('New Monster'), array('controller' => 'monsters', 'action' => 'index')); ?></li>
                     <li><?php echo $this->Html->link(__('List Attrs'), array('controller' => 'attrs', 'action' => 'index')); ?> </li>
                     <li><?php echo $this->Html->link(__('New Attr'), array('controller' => 'attrs', 'action' => 'add')); ?> </li>
                     <li><?php echo $this->Html->link(__('List Kinds'), array('controller' => 'kinds', 'action' => 'index')); ?> </li>

@@ -1910,3 +1910,30 @@ Stack Trace:
 #4 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
 #5 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2016-01-22 09:04:06 Error: [MissingControllerException] Controller class KindController could not be found.
+Exception Attributes: array (
+  'class' => 'KindController',
+  'plugin' => NULL,
+)
+Request URL: /Pazudora/kind/
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-22 09:18:48 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view/7
+Stack Trace:
+#0 [internal function]: AttrsController->view('7')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-22 09:18:51 Error: [NotFoundException] Invalid attr
+Request URL: /Pazudora/attrs/view/
+Stack Trace:
+#0 [internal function]: AttrsController->view()
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AttrsController), Array)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

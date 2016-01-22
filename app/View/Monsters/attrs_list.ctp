@@ -8,8 +8,10 @@
 							<?php echo h($attrs['Monster']['name']); ?>&nbsp;</div></th>
 				</tr>
 				<tr>
-					<td width="50" height="10"><?php echo $this->Html->link($this->Html->image('thumb.jpg'),
-							array('action' => 'index'),array('escape'=>false)); ?></td>
+					<td width="50" height="10">
+						<?php echo $this->Html->link($this->upload->uploadImage($attrs,'Monster.image',array('style'=>'thumb')),
+							array('action' => 'monsterpage/' .$attrs['Monster']['id']),array('escape'=>false)); ?>
+					</td>
 					<td class="td_hp">HP</td>
 					<td class="td_hp_value"><?php echo h($attrs['Monster']['hp']); ?>&nbsp;</td>
 					<td class="td_attack">攻撃力</td>

@@ -2,24 +2,24 @@
 <div class="monsters index">
 	<div class="table">
 		<table>
-			<?php foreach ($attrs as $attr): ?>
+			<?php foreach ($attrs as $attrs): ?>
 				<tr>
 					<th colspan="9" class="th_name"><div class="monster_name">
-							<?php echo h($attr['Monster']['name']); ?>&nbsp;</div></th>
+							<?php echo h($attrs['Monster']['name']); ?>&nbsp;</div></th>
 				</tr>
 				<tr>
 					<td width="50" height="10">
-						<?php echo $this->Html->link($this->upload->uploadImage($attr,'Monster.image',array('style'=>'thumb')),
+						<?php echo $this->Html->link($this->upload->uploadImage($attrs,'Monster.image',array('style'=>'thumb')),
 							array('action' => 'monsterpage'),array('escape'=>false)); ?>
 					</td>
 					<td class="td_hp">HP</td>
-					<td class="td_hp_value"><?php echo h($attr['Monster']['hp']); ?>&nbsp;</td>
+					<td class="td_hp_value"><?php echo h($attrs['Monster']['hp']); ?>&nbsp;</td>
 					<td class="td_attack">攻撃力</td>
-					<td class="td_attack_value"><?php echo h($attr['Monster']['atatck']); ?>&nbsp;</td>
+					<td class="td_attack_value"><?php echo h($attrs['Monster']['atatck']); ?>&nbsp;</td>
 					<td class="td_attr">属性</td>
-					<td class="td_attr_name"><?php echo h($attr['Attr']['attr_type']); ?>&nbsp;</td>
+					<td class="td_attr_name"><?php echo h($attrs['Attr']['attr_type']); ?>&nbsp;</td>
 					<td class="td_kind">タイプ</td>
-					<td class="td_kind_name"><?php echo h($attr['Kind']['kind_type']); ?>&nbsp;</td>
+					<td class="td_kind_name"><?php echo h($attrs['Kind']['kind_type']); ?>&nbsp;</td>
 				</tr>
 			<?php endforeach; ?>
 		</table>

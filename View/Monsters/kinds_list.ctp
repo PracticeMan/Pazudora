@@ -8,9 +8,13 @@
 							<?php echo h($kinds['Monster']['name']); ?>&nbsp;</div></th>
 				</tr>
 				<tr>
-					<td width="50" height="10"><?php echo $this->Html->link($this->Html->image('thumb.jpg'),
-							array('action' => 'index'),array('escape'=>false)); ?></td>
-					<td class="td_hp">HP</td>
+					<td width="50" height="10">
+						<?php //echo $this->Html->link($this->upload->uploadImage($kinds,'Monster.image',array('style'=>'thumb')),
+							//array('action' => 'view'),array('escape'=>false)); ?>
+						<?php echo $this->Html->link($this->Html->image('fire_icon.png'),
+							array('action' => 'view'),array('escape'=>false)); ?>
+					</td>
+					<td class="td_hp">HP5</td>
 					<td class="td_hp_value"><?php echo h($kinds['Monster']['hp']); ?>&nbsp;</td>
 					<td class="td_attack">攻撃力</td>
 					<td class="td_attack_value"><?php echo h($kinds['Monster']['atatck']); ?>&nbsp;</td>

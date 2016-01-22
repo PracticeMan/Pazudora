@@ -214,7 +214,6 @@ span:hover{
 	font-size: 18px;
 }
 
-<<<<<<< HEAD
 .kind_add_field{
 	position: relative;
 	left:4px;
@@ -252,16 +251,6 @@ span:hover{
 	border-style:solid;
 	border-width:1px;
 	border-color: #777777;
-=======
-.top_image{
-	position: relative; top: 0; left:112px;
-}
-.actions{
-	color: #ffffff;
-	position: relative; top: 0; left:200px;
-	background: #aaaaaa;
-	
->>>>>>> 6cc9c69f5e76700cd3aef0da8f9a56875ded0c4b
 }
 
 #td_id{

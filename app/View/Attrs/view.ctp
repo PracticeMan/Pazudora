@@ -56,8 +56,8 @@
 			<td><?php echo $monster['name']; ?></td>
 			<td><?php echo $monster['hp']; ?></td>
 			<td><?php echo $monster['atatck']; ?></td>
-			<td><?php echo $attr['Attr']['attr_type']; ?></td>
-			<td><?php echo $kind['Kind']['kind_type']; ?></td>
+			<td><?php echo $monster['attr_id']; ?></td>
+			<td><?php echo $monster['kind_id']; ?></td>
 			<td><?php echo $monster['image_file_name']; ?></td>
 			<td><?php echo $monster['created']; ?></td>
 			<td><?php echo $monster['modified']; ?></td>

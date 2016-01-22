@@ -27,6 +27,12 @@ class MonstersController extends AppController {
 		$this->set('monsters', $this->Paginator->paginate());
 	}
 
+	public function monsterpage() {
+		$this->layout = 'homemonster';
+		$this->Monster->recursive = 0;
+		$this->set('monsters', $this->Paginator->paginate());
+	}
+
 	public function attrs_list($attrid) {
 		$attrs = $this->Monster->find('all',array(
 			'conditions' => array(
@@ -49,18 +55,6 @@ class MonstersController extends AppController {
 		$this->layout = 'home';
 		$this->Monster->recursive = 0;
 		$this->set('monsters', $this->Paginator->paginate());
-	}
-
-	//public function monsterpage() {
-		//$this->layout = 'homemonster';
-		//$this->Monster->recursive = 0;
-		//$this->set('monsters', $this->Paginator->paginate());
-	//}
-	public function monsterpage($id) {
-		$this->layout = 'homemonster';
-
-		$options = array('conditions' => array('Monster.' . $this->Monster->primaryKey => $id));
-		$this->set('monster', $this->Monster->find('first', $options));
 	}
 
 	public function view($id = null) {

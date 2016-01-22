@@ -80,7 +80,17 @@ class MonstersController extends AppController {
 		$this->Monster->recursive = 0;
 		$this->set('monsters', $this->Paginator->paginate());
 	}
-
+	public function attrs_list($attrid) {
+		$attrs = $this->Monster->find('all',array(
+			'conditions' => array(
+				'Monster.attr_id' => array( $attrid )
+			)
+		));
+		$this->set('attrs',$attrs);
+		$this->layout = 'home';
+		$this->Monster->recursive = 0;
+		$this->set('monsters', $this->Paginator->paginate());
+	}
 	public function view($id = null) {
 		if (!$this->Monster->exists($id)) {
 			throw new NotFoundException(__('Invalid monster'));

@@ -10,7 +10,7 @@
 				<tr>
 					<td width="50" height="10">
 						<?php echo $this->Html->link($this->upload->uploadImage($kind,'Monster.image',array('style'=>'thumb')),
-							array('action' => 'index'),array('escape'=>false)); ?>
+							array('action' => 'monsterpage/' .$kind['Monster']['id']  ),array('escape'=>false)); ?>
 						<?php //echo $this->upload->uploadImage($kind,'Monster.image',array('style'=>'thumb'));?>
 
 					</td>

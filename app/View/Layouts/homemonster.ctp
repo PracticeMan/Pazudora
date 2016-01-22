@@ -13,13 +13,14 @@
         <?php echo $monster['Monster']['id']; ?>
     </h1>
     </DIV>
-    <h1 class="top_image">
+    
+       
+    <h1 class="top_image_zukan">
         <?php
             //echo $this->Html->link($this->Html->image('ip1_001.jpg'),array('action' => 'index'),array('escape'=>false));
             echo $this->Html->link($this->upload->uploadImage($monster,'Monster.image'),array('action' => 'index'),array('escape'=>false));
         ?>
-    </h1>
-            
+    </h1>        
 
     <div class="main">
         <div class="topics">

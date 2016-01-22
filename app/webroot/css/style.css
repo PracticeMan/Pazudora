@@ -211,14 +211,11 @@ span:hover{
 	font-size: 18px;
 }
 
-.top_image{
-	position: relative; top: 0; left:112px;
+.top_image_zukan{
+	position: relative; top: 0; left:130px;
 }
-.actions{
+.actions a{
 	color: #ffffff;
-	position: relative; top: 0; left:200px;
-	background: #aaaaaa;
-	
 }
 
 

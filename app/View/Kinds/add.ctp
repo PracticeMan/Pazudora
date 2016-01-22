@@ -1,19 +1,14 @@
+<?php echo $this->Html->css('style'); ?>
 <div class="kinds form">
 <?php echo $this->Form->create('Kind'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Kind'); ?></legend>
+	<fieldset class="kind_add_field">
+		<legend><?php echo __('新しい属性登録'); ?></legend>
 	<?php
-		echo $this->Form->input('kind_type');
+		echo $this->Form->input('kind_type',array('label' =>'属性名','class' => 'input_kind_name'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+	<div class="submit_btn">
+		<?php echo $this->Form->end(__('登録')); ?>
+	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Html->link(__('List Kinds'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Monsters'), array('controller' => 'monsters', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Monster'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
-	</ul>
-</div>

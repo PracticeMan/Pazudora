@@ -249,6 +249,53 @@ span:hover{
 	position: relative;
 	left:250px;
 }
+.monster_add_field{
+	position: relative;
+	left:4px;
+	top:20px;
+	width:400px;
+}
+.monster_add_field label{
+	text-align: center;
+}
+.input_monster_name {
+	width: 200px;;
+	font-size: 27px;
+	margin-left: 20px;
+}
+.input_monster_hp{
+	width: 200px;;
+	font-size: 27px;
+	margin-top: 10px;
+	margin-left: 86px;
+}
+
+.input_monster_attack{
+	width: 200px;;
+	font-size: 27px;
+	margin-top: 10px;
+	margin-left: 58px;
+}
+.input_monster_attr{
+	width: 100px;;
+	font-size: 27px;
+	margin-top: 10px;
+	margin-left: 74px;
+}
+.input_monster_kind{
+	width: 100px;;
+	font-size: 27px;
+	margin-top: 10px;
+	margin-left: 74px;
+}
+.input_monster_image{
+	margin-top: 10px;
+}
+.monster_submit_btn{
+	position: relative;
+	left:500px;
+	top:30px;
+}
 .view_table{
 	border-collapse:collapse;
 	position: relative;

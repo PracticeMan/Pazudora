@@ -2118,3 +2118,14 @@ Stack Trace:
 #1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
 #2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-01-23 09:43:44 Error: [MissingActionException] Action AttrsController::kinds_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'AttrsController',
+  'action' => 'kinds_list',
+)
+Request URL: /Pazudora/attrs/kinds_list/14
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

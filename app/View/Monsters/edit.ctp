@@ -1,28 +1,20 @@
+<?php echo $this->Html->css('style'); ?>
 <div class="monsters form">
-<?php echo $this->Form->create('Monster'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Monster'); ?></legend>
+<?php echo $this->Form->create('Monster',array('type'=>'file')); ?>
+	<fieldset class="monster_add_field">
+		<legend><?php echo __('モンスター編集'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-		echo $this->Form->input('hp');
-		echo $this->Form->input('atatck');
-		echo $this->Form->input('attr_id');
-		echo $this->Form->input('kind_id');
-		echo $this->Form->input('image_file_name');
+		echo $this->Form->input('name',array('label' => 'モンスター名','class' => 'input_monster_name'));
+		echo $this->Form->input('hp',array('label' => 'HP','class' => 'input_monster_hp'));
+		echo $this->Form->input('atatck',array('label' => '攻撃力','class' => 'input_monster_attack'));
+		echo $this->Form->input('attr_id',array('label' => '属性','class' => 'input_monster_attr'));
+		echo $this->Form->input('kind_id',array('label' => '種族','class' => 'input_monster_kind'));
+		echo $this->Form->input('image_file_name',array('type'=>'file','label'=>'モンスター画像','class' => 'input_monster_image'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+	<div class="monster_submit_btn">
+		<?php echo $this->Form->end(__('追加')); ?>
+	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Monster.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Monster.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Monsters'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Attrs'), array('controller' => 'attrs', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Attr'), array('controller' => 'attrs', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Kinds'), array('controller' => 'kinds', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Kind'), array('controller' => 'kinds', 'action' => 'add')); ?> </li>
-	</ul>
-</div>

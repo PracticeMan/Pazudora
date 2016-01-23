@@ -22,7 +22,7 @@
 					<td class="td_kind_name"><?php echo h($monsters['Kind']['kind_type']); ?>&nbsp;</td>
 					<td class="td_action">
 						<?php echo $this->Html->link($this->Html->image('edit_icon.png'),
-							array('action' => 'edit', $monsters['Attr']['id']),array('escape'=>false)); ?>
+							array('action' => 'edit', $monsters['Monster']['id']),array('escape'=>false)); ?>
 					</td>
 				</tr>
 			<?php endforeach; ?>

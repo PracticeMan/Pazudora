@@ -68,7 +68,7 @@
                 <ul>
                     <li><?php echo $this->Html->link($this->Html->image('tamadora.png'), 
                             array('action' => 'Monster_All'),array('escape'=>false)); ?>
-                        <?php echo $this->Html->link(__('Monster All'), array('action' => 'monster_all')); ?>
+                        <?php echo $this->Html->link(__('Monster All'), array('controller' => 'monsters','action' => 'monster_all')); ?>
                     </li>
                     <li><?php echo $this->Html->link($this->Html->image('fire.png'), 
                             array('action' => 'New_Monster'),array('escape'=>false)); ?>

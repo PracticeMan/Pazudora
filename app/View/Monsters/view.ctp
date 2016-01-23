@@ -48,16 +48,4 @@
 		</dd>
 	</dl>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Monster'), array('action' => 'edit', $monster['Monster']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Monster'), array('action' => 'delete', $monster['Monster']['id']), array(), __('Are you sure you want to delete # %s?', $monster['Monster']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Monsters'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Monster'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Attrs'), array('controller' => 'attrs', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Attr'), array('controller' => 'attrs', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Kinds'), array('controller' => 'kinds', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Kind'), array('controller' => 'kinds', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+

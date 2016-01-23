@@ -28,7 +28,6 @@
 
 </div>
 <div class="related">
-	<h3><?php echo __('Related Monsters'); ?></h3>
 	<?php if (!empty($kind['Monster'])): ?>
 	<table class="view_table" cellpadding = "0" cellspacing = "0">
 	<tr>
@@ -64,13 +63,9 @@
 					array('confirm' => __('Are you sure you want to delete # %s?', $kind['Kind']['id']))); ?>
 			</td>
 		</tr>
+		<br>
+		<br>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Monster'), array('controller' => 'monsters', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>

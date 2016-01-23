@@ -14,14 +14,4 @@
 	</fieldset>
 	<?php echo $this->Form->end(__('追加')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Html->link(__('トップページ'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('属性リスト'), array('controller' => 'attrs', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('新しく属性を追加する'), array('controller' => 'attrs', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('種族リスト'), array('controller' => 'kinds', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('新しく種族を追加する'), array('controller' => 'kinds', 'action' => 'add')); ?> </li>
-	</ul>
-</div>

@@ -63,6 +63,12 @@ class MonstersController extends AppController {
 		$this->set('monster', $this->Monster->find('first', $options));
 	}
 
+	public function monster_all() {
+		$this->layout = 'home';
+		$this->Monster->recursive = 0;
+		$this->set('monsters', $this->Paginator->paginate());
+	}
+
 	public function view($id = null) {
 		$this->layout = 'home';
 		if (!$this->Monster->exists($id)) {

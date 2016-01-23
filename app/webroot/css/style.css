@@ -104,6 +104,27 @@ body{
 .th_name{
 	background: #edf1ff;
 }
+.table_mon_all table{
+	border-collapse:collapse;
+	position: relative;
+	bottom:220px;
+	right:18px;
+	margin:0 auto 0 auto;
+	width:800px;
+	text-align: center;
+	border-style:solid;
+	border-width:1px;
+}
+
+.table_mon_all td{
+	border-style:solid;
+	border-width:1px;
+	border-color: #777777;
+}
+.td_action{
+	width:100px;
+	background: #aaaaaa;
+}
 .monster_name{
 	float: left;
 }

@@ -1937,3 +1937,184 @@ Stack Trace:
 #3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
 #4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-01-23 08:23:49 Error: [MissingActionException] Action AttrsController::monster_all() could not be found.
+Exception Attributes: array (
+  'controller' => 'AttrsController',
+  'action' => 'monster_all',
+)
+Request URL: /Pazudora/attrs/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AttrsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-23 08:24:45 Error: [MissingViewException] View file "Kinds\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-23 08:25:07 Error: [MissingViewException] View file "Kinds\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-23 08:26:22 Error: [MissingViewException] View file "Kinds\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-23 08:27:55 Error: [MissingViewException] View file "monster\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'monster\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName('/monster/monste...')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render('/monster/monste...', NULL)
+#2 C:\xampp\htdocs\Pazudora\app\Controller\KindsController.php(30): Controller->render('/monster/monste...')
+#3 [internal function]: KindsController->monster_all()
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KindsController), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-23 08:29:16 Error: [MissingViewException] View file "monster\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'monster\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName('/monster/monste...')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render('/monster/monste...', NULL)
+#2 C:\xampp\htdocs\Pazudora\app\Controller\KindsController.php(30): Controller->render('/monster/monste...')
+#3 [internal function]: KindsController->monster_all()
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KindsController), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-23 08:32:01 Error: [MissingActionException] Action KindsController::monster_all() could not be found.
+Exception Attributes: array (
+  'controller' => 'KindsController',
+  'action' => 'monster_all',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-23 08:33:23 Error: [MissingActionException] Action KindsController::monster_all() could not be found.
+Exception Attributes: array (
+  'controller' => 'KindsController',
+  'action' => 'monster_all',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-23 08:34:51 Error: [MissingActionException] Action KindsController::monster_all() could not be found.
+Exception Attributes: array (
+  'controller' => 'KindsController',
+  'action' => 'monster_all',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-23 08:37:42 Error: [MissingViewException] View file "Kinds\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName('monster_all')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render('monster_all', NULL)
+#2 C:\xampp\htdocs\Pazudora\app\Controller\KindsController.php(31): Controller->render('monster_all')
+#3 [internal function]: KindsController->monster_all()
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KindsController), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-23 08:38:45 Error: [MissingViewException] View file "Kinds\monsters\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monsters\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName('monsters/monste...')
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render('monsters/monste...', NULL)
+#2 C:\xampp\htdocs\Pazudora\app\Controller\KindsController.php(31): Controller->render('monsters/monste...')
+#3 [internal function]: KindsController->monster_all()
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KindsController), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-23 08:40:40 Error: [MissingViewException] View file "Kinds\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\app\Controller\KindsController.php(31): Controller->render(NULL, NULL, 'VIEWSmonsters\\m...')
+#3 [internal function]: KindsController->monster_all()
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KindsController), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-23 08:40:55 Error: [MissingViewException] View file "Kinds\monster_all.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Kinds\\monster_all.ctp',
+)
+Request URL: /Pazudora/kinds/monster_all
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Pazudora\app\Controller\KindsController.php(31): Controller->render(NULL, NULL, 'VIEWSmonsters\\m...')
+#3 [internal function]: KindsController->monster_all()
+#4 C:\xampp\htdocs\Pazudora\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KindsController), Array)
+#5 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-23 08:48:27 Error: [MissingActionException] Action KindsController::attrs_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'KindsController',
+  'action' => 'attrs_list',
+)
+Request URL: /Pazudora/kinds/attrs_list/1
+Stack Trace:
+#0 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Pazudora\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(KindsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Pazudora\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

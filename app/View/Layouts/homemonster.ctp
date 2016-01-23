@@ -33,12 +33,26 @@
             <legend><h3>MENU</h3></legend><br>
             <div class="actions">
                 <ul>
-                    <li><?php echo $this->Html->link(__('Monster All'), array('action' => 'monster_all')); ?></li>
-                    <li><?php echo $this->Html->link(__('New Monster'), array('action' => 'add')); ?></li>
-                    <li><?php echo $this->Html->link(__('List Attrs'), array('controller' => 'attrs', 'action' => 'index')); ?> </li>
-                    <li><?php echo $this->Html->link(__('New Attr'), array('controller' => 'attrs', 'action' => 'add')); ?> </li>
-                    <li><?php echo $this->Html->link(__('List Kinds'), array('controller' => 'kinds', 'action' => 'index')); ?> </li>
-                    <li><?php echo $this->Html->link(__('New Kind'), array('controller' => 'kinds', 'action' => 'add')); ?> </li>
+                    <li><?php echo $this->Html->link($this->Html->image('fire.png'), 
+                            array('action' => 'New_Monster'),array('escape'=>false)); ?>
+                        <?php echo $this->Html->link(__('New_Monster'), array('action' => 'add')); ?>
+                    </li>
+                    <li><?php echo $this->Html->link($this->Html->image('water.png'), 
+                            array('action' => 'List Attrs'),array('escape'=>false)); ?>
+                        <?php echo $this->Html->link(__('List Attrs'), array('controller' => 'attrs', 'action' => 'index')); ?> 
+                    </li>
+                    <li><?php echo $this->Html->link($this->Html->image('wood.png'), 
+                            array('action' => 'New Attr'),array('escape'=>false)); ?>
+                        <?php echo $this->Html->link(__('New Attr'), array('controller' => 'attrs', 'action' => 'add')); ?> 
+                    </li>
+                    <li><?php echo $this->Html->link($this->Html->image('light.png'), 
+                            array('action' => 'List Kinds'),array('escape'=>false)); ?>
+                        <?php echo $this->Html->link(__('List Kinds'), array('controller' => 'kinds', 'action' => 'index')); ?> 
+                    </li>
+                    <li><?php echo $this->Html->link($this->Html->image('dark.png'), 
+                            array('action' => 'New Kind'),array('escape'=>false)); ?>
+                        <?php echo $this->Html->link(__('New Kind'), array('controller' => 'kinds', 'action' => 'add')); ?> 
+                    </li>
                 </ul>
             </div>
         </fieldset>
